@@ -3,7 +3,7 @@
 
 <!DOCTYPE rdf:RDF [
     <!ENTITY dcterms "http://purl.org/dc/terms/" >
-    <!ENTITY bmo "http://purl.org/bmo/1.0.0#" >
+    <!ENTITY bmo "http://purl.org/bmo/ns/1.0.0#" >
     <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
     <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
     <!ENTITY gr "http://purl.org/goodrelations/v1#" >
@@ -13,10 +13,10 @@
 ]>
 
 
-<rdf:RDF xmlns="http://purl.org/bmo#"
-     xml:base="http://purl.org/bmo"
+<rdf:RDF xmlns="http://purl.org/bmo/ns#"
+     xml:base="http://purl.org/bmo/ns"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
-     xmlns:bmo="http://purl.org/bmo/1.0.0#"
+     xmlns:bmo="http://purl.org/bmo/ns/1.0.0#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
@@ -31,8 +31,8 @@
 
 A Web vocabulary for describing a business via a formal model. Such a model can be used as a competitive intelligence tool by a business, or as a discovery and evaluation tool by investors.
 
-Vocabulary:    http://purl.org/bmo
-Namespace:    http://purl.org/bmo#
+Vocabulary:    http://purl.org/bmo/ns
+Namespace:    http://purl.org/bmo/ns#
 
 The Business Model Ontology draws on a number of different techniques to describe a company so that it can later categorised by humans or machines for evaluation, search and comparison reasons e.g. a business may need to identify it&apos;s competitors, an investor may wish to find a specific profile of a company to invest in.
 
