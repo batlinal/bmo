@@ -23,7 +23,7 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:gr="http://purl.org/goodrelations/v1#"
      xmlns:dcterms="http://purl.org/dc/terms/">
-    <owl:Ontology rdf:about="http://purl.org/bmo/ns">
+    <owl:Ontology rdf:about="http://purl.org/bmo/ns/">
         <rdfs:label xml:lang="en">Business Model Ontology</rdfs:label>
         <dc:creator xml:lang="en">Alex Batlin</dc:creator>
         <dc:title xml:lang="en">BMO: The Business Model Ontology</dc:title>
@@ -100,118 +100,118 @@ See http://www.w3.org/2004/02/skos/ for more information.</rdfs:comment>
     
 
 
-    <!-- http://purl.org/bmo#hasBusinessModel -->
+    <!-- http://purl.org/bmo/ns#hasBusinessModel -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/bmo#hasBusinessModel">
+    <owl:ObjectProperty rdf:about="http://purl.org/bmo/ns#hasBusinessModel">
         <rdfs:label>has business model (0..*)</rdfs:label>
-        <rdfs:range rdf:resource="http://purl.org/bmo#BusinessModel"/>
-        <owl:inverseOf rdf:resource="http://purl.org/bmo#isBusinessModelOf"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/bmo/1.0.0"/>
+        <rdfs:range rdf:resource="http://purl.org/bmo/ns#BusinessModel"/>
+        <owl:inverseOf rdf:resource="http://purl.org/bmo/ns#isBusinessModelOf"/>
         <rdfs:domain rdf:resource="&gr;BusinessEntity"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.org/bmo#hasChannel -->
+    <!-- http://purl.org/bmo/ns#hasChannel -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/bmo#hasChannel">
+    <owl:ObjectProperty rdf:about="http://purl.org/bmo/ns#hasChannel">
         <rdfs:label xml:lang="en">has channel (0..*)</rdfs:label>
-        <rdfs:domain rdf:resource="http://purl.org/bmo#BusinessModel"/>
-        <rdfs:range rdf:resource="http://purl.org/bmo#Channel"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/bmo/1.0.0"/>
+        <rdfs:domain rdf:resource="http://purl.org/bmo/ns#BusinessModel"/>
+        <rdfs:range rdf:resource="http://purl.org/bmo/ns#Channel"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.org/bmo#hasCompetitor -->
+    <!-- http://purl.org/bmo/ns#hasCompetitor -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/bmo#hasCompetitor">
+    <owl:ObjectProperty rdf:about="http://purl.org/bmo/ns#hasCompetitor">
         <rdfs:label xml:lang="en">has competitor (0..*)</rdfs:label>
-        <rdfs:domain rdf:resource="http://purl.org/bmo#MarketSpace"/>
-        <owl:inverseOf rdf:resource="http://purl.org/bmo#isCompetitorInMarketSpace"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/bmo/1.0.0"/>
+        <rdfs:domain rdf:resource="http://purl.org/bmo/ns#MarketSpace"/>
+        <owl:inverseOf rdf:resource="http://purl.org/bmo/ns#isCompetitorInMarketSpace"/>
         <rdfs:range rdf:resource="&gr;BusinessEntity"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.org/bmo#hasCostStructureComponent -->
+    <!-- http://purl.org/bmo/ns#hasCostStructureComponent -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/bmo#hasCostStructureComponent">
+    <owl:ObjectProperty rdf:about="http://purl.org/bmo/ns#hasCostStructureComponent">
         <rdfs:label xml:lang="en">has cost structure component (0..*)</rdfs:label>
-        <rdfs:domain rdf:resource="http://purl.org/bmo#BusinessModel"/>
-        <rdfs:range rdf:resource="http://purl.org/bmo#CostStructureComponent"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/bmo/1.0.0"/>
+        <rdfs:domain rdf:resource="http://purl.org/bmo/ns#BusinessModel"/>
+        <rdfs:range rdf:resource="http://purl.org/bmo/ns#CostStructureComponent"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.org/bmo#hasCustomerRelationship -->
+    <!-- http://purl.org/bmo/ns#hasCustomerRelationship -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/bmo#hasCustomerRelationship">
+    <owl:ObjectProperty rdf:about="http://purl.org/bmo/ns#hasCustomerRelationship">
         <rdfs:label xml:lang="en">has customer relationship  (0..*)</rdfs:label>
-        <rdfs:domain rdf:resource="http://purl.org/bmo#BusinessModel"/>
-        <rdfs:range rdf:resource="http://purl.org/bmo#CustomerRelationship"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/bmo/1.0.0"/>
+        <rdfs:domain rdf:resource="http://purl.org/bmo/ns#BusinessModel"/>
+        <rdfs:range rdf:resource="http://purl.org/bmo/ns#CustomerRelationship"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.org/bmo#hasCustomerSegment -->
+    <!-- http://purl.org/bmo/ns#hasCustomerSegment -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/bmo#hasCustomerSegment">
+    <owl:ObjectProperty rdf:about="http://purl.org/bmo/ns#hasCustomerSegment">
         <rdfs:label xml:lang="en">has customer segment (0..*)</rdfs:label>
-        <rdfs:domain rdf:resource="http://purl.org/bmo#BusinessModel"/>
-        <rdfs:range rdf:resource="http://purl.org/bmo#CustomerSegment"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/bmo/1.0.0"/>
+        <rdfs:domain rdf:resource="http://purl.org/bmo/ns#BusinessModel"/>
+        <rdfs:range rdf:resource="http://purl.org/bmo/ns#CustomerSegment"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.org/bmo#hasKeyActivity -->
+    <!-- http://purl.org/bmo/ns#hasKeyActivity -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/bmo#hasKeyActivity">
+    <owl:ObjectProperty rdf:about="http://purl.org/bmo/ns#hasKeyActivity">
         <rdfs:label xml:lang="en">has key activity  (0..*)</rdfs:label>
-        <rdfs:domain rdf:resource="http://purl.org/bmo#BusinessModel"/>
-        <rdfs:range rdf:resource="http://purl.org/bmo#KeyActivity"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/bmo/1.0.0"/>
+        <rdfs:domain rdf:resource="http://purl.org/bmo/ns#BusinessModel"/>
+        <rdfs:range rdf:resource="http://purl.org/bmo/ns#KeyActivity"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.org/bmo#hasKeyPartner -->
+    <!-- http://purl.org/bmo/ns#hasKeyPartner -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/bmo#hasKeyPartner">
+    <owl:ObjectProperty rdf:about="http://purl.org/bmo/ns#hasKeyPartner">
         <rdfs:label xml:lang="en">has key partner (0..*)</rdfs:label>
-        <rdfs:domain rdf:resource="http://purl.org/bmo#BusinessModel"/>
-        <rdfs:range rdf:resource="http://purl.org/bmo#KeyPartner"/>
-        <owl:inverseOf rdf:resource="http://purl.org/bmo#isKeyPartnerOf"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/bmo/1.0.0"/>
+        <rdfs:domain rdf:resource="http://purl.org/bmo/ns#BusinessModel"/>
+        <rdfs:range rdf:resource="http://purl.org/bmo/ns#KeyPartner"/>
+        <owl:inverseOf rdf:resource="http://purl.org/bmo/ns#isKeyPartnerOf"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.org/bmo#hasKeyResource -->
+    <!-- http://purl.org/bmo/ns#hasKeyResource -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/bmo#hasKeyResource">
+    <owl:ObjectProperty rdf:about="http://purl.org/bmo/ns#hasKeyResource">
         <rdfs:label xml:lang="en">has key resource  (0..*)</rdfs:label>
-        <rdfs:domain rdf:resource="http://purl.org/bmo#BusinessModel"/>
-        <rdfs:range rdf:resource="http://purl.org/bmo#KeyResource"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/bmo/1.0.0"/>
+        <rdfs:domain rdf:resource="http://purl.org/bmo/ns#BusinessModel"/>
+        <rdfs:range rdf:resource="http://purl.org/bmo/ns#KeyResource"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.org/bmo#hasOfferingLevel -->
+    <!-- http://purl.org/bmo/ns#hasOfferingLevel -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/bmo#hasOfferingLevel">
+    <owl:ObjectProperty rdf:about="http://purl.org/bmo/ns#hasOfferingLevel">
         <rdfs:label xml:lang="en">has offering level (0..*)</rdfs:label>
-        <rdfs:range rdf:resource="http://purl.org/bmo#OfferingLevel"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/bmo/1.0.0"/>
+        <rdfs:range rdf:resource="http://purl.org/bmo/ns#OfferingLevel"/>
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/bmo#CompetingFactor"/>
+                    <rdf:Description rdf:about="http://purl.org/bmo/ns#CompetingFactor"/>
                     <rdf:Description rdf:about="&gr;BusinessEntity"/>
                 </owl:unionOf>
             </owl:Class>
@@ -220,187 +220,187 @@ See http://www.w3.org/2004/02/skos/ for more information.</rdfs:comment>
     
 
 
-    <!-- http://purl.org/bmo#hasOpportunity -->
+    <!-- http://purl.org/bmo/ns#hasOpportunity -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/bmo#hasOpportunity">
+    <owl:ObjectProperty rdf:about="http://purl.org/bmo/ns#hasOpportunity">
         <rdfs:label xml:lang="en">has opportunity (0..*)</rdfs:label>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/bmo/1.0.0"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.org/bmo#hasRevenueStream -->
+    <!-- http://purl.org/bmo/ns#hasRevenueStream -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/bmo#hasRevenueStream">
+    <owl:ObjectProperty rdf:about="http://purl.org/bmo/ns#hasRevenueStream">
         <rdfs:label xml:lang="en">has revenue stream (0..*)</rdfs:label>
-        <rdfs:domain rdf:resource="http://purl.org/bmo#BusinessModel"/>
-        <rdfs:range rdf:resource="http://purl.org/bmo#RevenueStream"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/bmo/1.0.0"/>
+        <rdfs:domain rdf:resource="http://purl.org/bmo/ns#BusinessModel"/>
+        <rdfs:range rdf:resource="http://purl.org/bmo/ns#RevenueStream"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.org/bmo#hasStrength -->
+    <!-- http://purl.org/bmo/ns#hasStrength -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/bmo#hasStrength">
+    <owl:ObjectProperty rdf:about="http://purl.org/bmo/ns#hasStrength">
         <rdfs:label xml:lang="en">has stregth (0..*)</rdfs:label>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/bmo/1.0.0"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.org/bmo#hasSwotAnalysis -->
+    <!-- http://purl.org/bmo/ns#hasSwotAnalysis -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/bmo#hasSwotAnalysis"/>
+    <owl:ObjectProperty rdf:about="http://purl.org/bmo/ns#hasSwotAnalysis"/>
     
 
 
-    <!-- http://purl.org/bmo#hasThreat -->
+    <!-- http://purl.org/bmo/ns#hasThreat -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/bmo#hasThreat">
+    <owl:ObjectProperty rdf:about="http://purl.org/bmo/ns#hasThreat">
         <rdfs:label xml:lang="en">has threat (0..*)</rdfs:label>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/bmo/1.0.0"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.org/bmo#hasValueProposition -->
+    <!-- http://purl.org/bmo/ns#hasValueProposition -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/bmo#hasValueProposition">
+    <owl:ObjectProperty rdf:about="http://purl.org/bmo/ns#hasValueProposition">
         <rdfs:label xml:lang="en">has value proposition (0..*)</rdfs:label>
-        <rdfs:domain rdf:resource="http://purl.org/bmo#BusinessModel"/>
-        <rdfs:range rdf:resource="http://purl.org/bmo#ValueProposition"/>
-        <owl:inverseOf rdf:resource="http://purl.org/bmo#isValuePropositionOf"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/bmo/1.0.0"/>
+        <rdfs:domain rdf:resource="http://purl.org/bmo/ns#BusinessModel"/>
+        <rdfs:range rdf:resource="http://purl.org/bmo/ns#ValueProposition"/>
+        <owl:inverseOf rdf:resource="http://purl.org/bmo/ns#isValuePropositionOf"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.org/bmo#hasWeakness -->
+    <!-- http://purl.org/bmo/ns#hasWeakness -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/bmo#hasWeakness">
+    <owl:ObjectProperty rdf:about="http://purl.org/bmo/ns#hasWeakness">
         <rdfs:label xml:lang="en">has weakness (0..*)</rdfs:label>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/bmo/1.0.0"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.org/bmo#isBusinessModelOf -->
+    <!-- http://purl.org/bmo/ns#isBusinessModelOf -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/bmo#isBusinessModelOf">
+    <owl:ObjectProperty rdf:about="http://purl.org/bmo/ns#isBusinessModelOf">
         <rdfs:label>is a business model of (0..*)</rdfs:label>
-        <rdfs:domain rdf:resource="http://purl.org/bmo#BusinessModel"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/bmo/1.0.0"/>
+        <rdfs:domain rdf:resource="http://purl.org/bmo/ns#BusinessModel"/>
         <rdfs:range rdf:resource="&gr;BusinessEntity"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.org/bmo#isChannelOf -->
+    <!-- http://purl.org/bmo/ns#isChannelOf -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/bmo#isChannelOf">
+    <owl:ObjectProperty rdf:about="http://purl.org/bmo/ns#isChannelOf">
         <rdfs:label xml:lang="en">is a channel of (0..*)</rdfs:label>
-        <rdfs:range rdf:resource="http://purl.org/bmo#BusinessModel"/>
-        <rdfs:domain rdf:resource="http://purl.org/bmo#Channel"/>
-        <owl:inverseOf rdf:resource="http://purl.org/bmo#hasChannel"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/bmo/1.0.0"/>
+        <rdfs:range rdf:resource="http://purl.org/bmo/ns#BusinessModel"/>
+        <rdfs:domain rdf:resource="http://purl.org/bmo/ns#Channel"/>
+        <owl:inverseOf rdf:resource="http://purl.org/bmo/ns#hasChannel"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.org/bmo#isCompetitorInMarketSpace -->
+    <!-- http://purl.org/bmo/ns#isCompetitorInMarketSpace -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/bmo#isCompetitorInMarketSpace">
+    <owl:ObjectProperty rdf:about="http://purl.org/bmo/ns#isCompetitorInMarketSpace">
         <rdfs:label xml:lang="en">is a competitor in market space (0..*)</rdfs:label>
-        <rdfs:range rdf:resource="http://purl.org/bmo#MarketSpace"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/bmo/1.0.0"/>
+        <rdfs:range rdf:resource="http://purl.org/bmo/ns#MarketSpace"/>
         <rdfs:domain rdf:resource="&gr;BusinessEntity"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.org/bmo#isCostStructureComponentOf -->
+    <!-- http://purl.org/bmo/ns#isCostStructureComponentOf -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/bmo#isCostStructureComponentOf">
+    <owl:ObjectProperty rdf:about="http://purl.org/bmo/ns#isCostStructureComponentOf">
         <rdfs:label xml:lang="en">is a cost structure component of (0..*)</rdfs:label>
-        <rdfs:range rdf:resource="http://purl.org/bmo#BusinessModel"/>
-        <rdfs:domain rdf:resource="http://purl.org/bmo#CostStructureComponent"/>
-        <owl:inverseOf rdf:resource="http://purl.org/bmo#hasCostStructureComponent"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/bmo/1.0.0"/>
+        <rdfs:range rdf:resource="http://purl.org/bmo/ns#BusinessModel"/>
+        <rdfs:domain rdf:resource="http://purl.org/bmo/ns#CostStructureComponent"/>
+        <owl:inverseOf rdf:resource="http://purl.org/bmo/ns#hasCostStructureComponent"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.org/bmo#isCustomerRelationshipOf -->
+    <!-- http://purl.org/bmo/ns#isCustomerRelationshipOf -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/bmo#isCustomerRelationshipOf">
+    <owl:ObjectProperty rdf:about="http://purl.org/bmo/ns#isCustomerRelationshipOf">
         <rdfs:label xml:lang="en">is a customer relationship of  (0..*)</rdfs:label>
-        <rdfs:range rdf:resource="http://purl.org/bmo#BusinessModel"/>
-        <rdfs:domain rdf:resource="http://purl.org/bmo#CustomerRelationship"/>
-        <owl:inverseOf rdf:resource="http://purl.org/bmo#hasCustomerRelationship"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/bmo/1.0.0"/>
+        <rdfs:range rdf:resource="http://purl.org/bmo/ns#BusinessModel"/>
+        <rdfs:domain rdf:resource="http://purl.org/bmo/ns#CustomerRelationship"/>
+        <owl:inverseOf rdf:resource="http://purl.org/bmo/ns#hasCustomerRelationship"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.org/bmo#isCustomerSegmentOf -->
+    <!-- http://purl.org/bmo/ns#isCustomerSegmentOf -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/bmo#isCustomerSegmentOf">
+    <owl:ObjectProperty rdf:about="http://purl.org/bmo/ns#isCustomerSegmentOf">
         <rdfs:label xml:lang="en">is a customer segment of (0..*)</rdfs:label>
-        <rdfs:range rdf:resource="http://purl.org/bmo#BusinessModel"/>
-        <rdfs:domain rdf:resource="http://purl.org/bmo#CustomerSegment"/>
-        <owl:inverseOf rdf:resource="http://purl.org/bmo#hasCustomerSegment"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/bmo/1.0.0"/>
+        <rdfs:range rdf:resource="http://purl.org/bmo/ns#BusinessModel"/>
+        <rdfs:domain rdf:resource="http://purl.org/bmo/ns#CustomerSegment"/>
+        <owl:inverseOf rdf:resource="http://purl.org/bmo/ns#hasCustomerSegment"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.org/bmo#isKeyActivityOf -->
+    <!-- http://purl.org/bmo/ns#isKeyActivityOf -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/bmo#isKeyActivityOf">
+    <owl:ObjectProperty rdf:about="http://purl.org/bmo/ns#isKeyActivityOf">
         <rdfs:label xml:lang="en">is a key activity of  (0..*)</rdfs:label>
-        <rdfs:range rdf:resource="http://purl.org/bmo#BusinessModel"/>
-        <rdfs:domain rdf:resource="http://purl.org/bmo#KeyActivity"/>
-        <owl:inverseOf rdf:resource="http://purl.org/bmo#hasKeyActivity"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/bmo/1.0.0"/>
+        <rdfs:range rdf:resource="http://purl.org/bmo/ns#BusinessModel"/>
+        <rdfs:domain rdf:resource="http://purl.org/bmo/ns#KeyActivity"/>
+        <owl:inverseOf rdf:resource="http://purl.org/bmo/ns#hasKeyActivity"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.org/bmo#isKeyPartnerOf -->
+    <!-- http://purl.org/bmo/ns#isKeyPartnerOf -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/bmo#isKeyPartnerOf">
+    <owl:ObjectProperty rdf:about="http://purl.org/bmo/ns#isKeyPartnerOf">
         <rdfs:label xml:lang="en">is a key partner of (0..*)</rdfs:label>
-        <rdfs:range rdf:resource="http://purl.org/bmo#BusinessModel"/>
-        <rdfs:domain rdf:resource="http://purl.org/bmo#KeyPartner"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/bmo/1.0.0"/>
+        <rdfs:range rdf:resource="http://purl.org/bmo/ns#BusinessModel"/>
+        <rdfs:domain rdf:resource="http://purl.org/bmo/ns#KeyPartner"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.org/bmo#isKeyResourceOf -->
+    <!-- http://purl.org/bmo/ns#isKeyResourceOf -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/bmo#isKeyResourceOf">
+    <owl:ObjectProperty rdf:about="http://purl.org/bmo/ns#isKeyResourceOf">
         <rdfs:label xml:lang="en">is a key resource of  (0..*)</rdfs:label>
-        <rdfs:range rdf:resource="http://purl.org/bmo#BusinessModel"/>
-        <rdfs:domain rdf:resource="http://purl.org/bmo#KeyResource"/>
-        <owl:inverseOf rdf:resource="http://purl.org/bmo#hasKeyResource"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/bmo/1.0.0"/>
+        <rdfs:range rdf:resource="http://purl.org/bmo/ns#BusinessModel"/>
+        <rdfs:domain rdf:resource="http://purl.org/bmo/ns#KeyResource"/>
+        <owl:inverseOf rdf:resource="http://purl.org/bmo/ns#hasKeyResource"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.org/bmo#isOfferingLevelOf -->
+    <!-- http://purl.org/bmo/ns#isOfferingLevelOf -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/bmo#isOfferingLevelOf">
+    <owl:ObjectProperty rdf:about="http://purl.org/bmo/ns#isOfferingLevelOf">
         <rdfs:label xml:lang="en">is an offering level of (0..*)</rdfs:label>
-        <rdfs:domain rdf:resource="http://purl.org/bmo#OfferingLevel"/>
-        <owl:inverseOf rdf:resource="http://purl.org/bmo#hasOfferingLevel"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/bmo/1.0.0"/>
+        <rdfs:domain rdf:resource="http://purl.org/bmo/ns#OfferingLevel"/>
+        <owl:inverseOf rdf:resource="http://purl.org/bmo/ns#hasOfferingLevel"/>
         <rdfs:range>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/bmo#CompetingFactor"/>
+                    <rdf:Description rdf:about="http://purl.org/bmo/ns#CompetingFactor"/>
                     <rdf:Description rdf:about="&gr;BusinessEntity"/>
                 </owl:unionOf>
             </owl:Class>
@@ -409,65 +409,65 @@ See http://www.w3.org/2004/02/skos/ for more information.</rdfs:comment>
     
 
 
-    <!-- http://purl.org/bmo#isOpportunityOf -->
+    <!-- http://purl.org/bmo/ns#isOpportunityOf -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/bmo#isOpportunityOf">
+    <owl:ObjectProperty rdf:about="http://purl.org/bmo/ns#isOpportunityOf">
         <rdfs:label xml:lang="en">is an opportunity of (0..*)</rdfs:label>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/bmo/1.0.0"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.org/bmo#isRevenueStreamOf -->
+    <!-- http://purl.org/bmo/ns#isRevenueStreamOf -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/bmo#isRevenueStreamOf">
+    <owl:ObjectProperty rdf:about="http://purl.org/bmo/ns#isRevenueStreamOf">
         <rdfs:label xml:lang="en">is a revenue stream of (0..*)</rdfs:label>
-        <rdfs:range rdf:resource="http://purl.org/bmo#BusinessModel"/>
-        <rdfs:domain rdf:resource="http://purl.org/bmo#RevenueStream"/>
-        <owl:inverseOf rdf:resource="http://purl.org/bmo#hasRevenueStream"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/bmo/1.0.0"/>
+        <rdfs:range rdf:resource="http://purl.org/bmo/ns#BusinessModel"/>
+        <rdfs:domain rdf:resource="http://purl.org/bmo/ns#RevenueStream"/>
+        <owl:inverseOf rdf:resource="http://purl.org/bmo/ns#hasRevenueStream"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.org/bmo#isStrengthOf -->
+    <!-- http://purl.org/bmo/ns#isStrengthOf -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/bmo#isStrengthOf">
+    <owl:ObjectProperty rdf:about="http://purl.org/bmo/ns#isStrengthOf">
         <rdfs:label xml:lang="en">is a strength of (0..*)</rdfs:label>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/bmo/1.0.0"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.org/bmo#isSwotAnalysisOf -->
+    <!-- http://purl.org/bmo/ns#isSwotAnalysisOf -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/bmo#isSwotAnalysisOf"/>
+    <owl:ObjectProperty rdf:about="http://purl.org/bmo/ns#isSwotAnalysisOf"/>
     
 
 
-    <!-- http://purl.org/bmo#isThreatOf -->
+    <!-- http://purl.org/bmo/ns#isThreatOf -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/bmo#isThreatOf">
+    <owl:ObjectProperty rdf:about="http://purl.org/bmo/ns#isThreatOf">
         <rdfs:label xml:lang="en">is threat of (0..*)</rdfs:label>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/bmo/1.0.0"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.org/bmo#isValuePropositionOf -->
+    <!-- http://purl.org/bmo/ns#isValuePropositionOf -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/bmo#isValuePropositionOf">
+    <owl:ObjectProperty rdf:about="http://purl.org/bmo/ns#isValuePropositionOf">
         <rdfs:label xml:lang="en">is a value proposition of (0..*)</rdfs:label>
-        <rdfs:range rdf:resource="http://purl.org/bmo#BusinessModel"/>
-        <rdfs:domain rdf:resource="http://purl.org/bmo#ValueProposition"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/bmo/1.0.0"/>
+        <rdfs:range rdf:resource="http://purl.org/bmo/ns#BusinessModel"/>
+        <rdfs:domain rdf:resource="http://purl.org/bmo/ns#ValueProposition"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.org/bmo#isWeaknessOf -->
+    <!-- http://purl.org/bmo/ns#isWeaknessOf -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/bmo#isWeaknessOf">
+    <owl:ObjectProperty rdf:about="http://purl.org/bmo/ns#isWeaknessOf">
         <rdfs:label xml:lang="en">is a weakness of (0..*)</rdfs:label>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/bmo/1.0.0"/>
     </owl:ObjectProperty>
@@ -485,12 +485,12 @@ See http://www.w3.org/2004/02/skos/ for more information.</rdfs:comment>
     
 
 
-    <!-- http://purl.org/bmo#hasOfferingLevelValue -->
+    <!-- http://purl.org/bmo/ns#hasOfferingLevelValue -->
 
-    <owl:DatatypeProperty rdf:about="http://purl.org/bmo#hasOfferingLevelValue">
+    <owl:DatatypeProperty rdf:about="http://purl.org/bmo/ns#hasOfferingLevelValue">
         <rdfs:label xml:lang="en">has offering level value</rdfs:label>
-        <rdfs:domain rdf:resource="http://purl.org/bmo#OfferingLevel"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/bmo/1.0.0"/>
+        <rdfs:domain rdf:resource="http://purl.org/bmo/ns#OfferingLevel"/>
         <rdfs:range>
             <rdfs:Datatype>
                 <owl:onDatatype rdf:resource="&xsd;int"/>
@@ -519,9 +519,9 @@ See http://www.w3.org/2004/02/skos/ for more information.</rdfs:comment>
     
 
 
-    <!-- http://purl.org/bmo#BusinessModel -->
+    <!-- http://purl.org/bmo/ns#BusinessModel -->
 
-    <owl:Class rdf:about="http://purl.org/bmo#BusinessModel">
+    <owl:Class rdf:about="http://purl.org/bmo/ns#BusinessModel">
         <rdfs:label xml:lang="en">Business model</rdfs:label>
         <rdfs:comment xml:lang="en">A business model describes the rationale of how an organization creates, delivers, and captures value, in economic, social, cultural or other contexts.
 
@@ -531,9 +531,9 @@ See http://www.w3.org/2004/02/skos/ for more information.</rdfs:comment>
     
 
 
-    <!-- http://purl.org/bmo#Channel -->
+    <!-- http://purl.org/bmo/ns#Channel -->
 
-    <owl:Class rdf:about="http://purl.org/bmo#Channel">
+    <owl:Class rdf:about="http://purl.org/bmo/ns#Channel">
         <rdfs:label xml:lang="en">Channel</rdfs:label>
         <rdfs:comment xml:lang="en">Through which Channels do our Customer Segments want to be reached? 
 How are we reaching them now?
@@ -558,9 +558,9 @@ Channel phases:
     
 
 
-    <!-- http://purl.org/bmo#CompetingFactor -->
+    <!-- http://purl.org/bmo/ns#CompetingFactor -->
 
-    <owl:Class rdf:about="http://purl.org/bmo#CompetingFactor">
+    <owl:Class rdf:about="http://purl.org/bmo/ns#CompetingFactor">
         <rdfs:label xml:lang="en">Competing factor</rdfs:label>
         <rdfs:comment xml:lang="en">A factor the industry competes on and invests in. Based on Blue Ocean Strategy&apos;s strategy canvas, see http://www.blueoceanstrategy.com/ for details.
 
@@ -572,9 +572,9 @@ The horizontal axis captures the range of factors the industry competes on and i
     
 
 
-    <!-- http://purl.org/bmo#CostStructureComponent -->
+    <!-- http://purl.org/bmo/ns#CostStructureComponent -->
 
-    <owl:Class rdf:about="http://purl.org/bmo#CostStructureComponent">
+    <owl:Class rdf:about="http://purl.org/bmo/ns#CostStructureComponent">
         <rdfs:label xml:lang="en">Cost structure component</rdfs:label>
         <rdfs:comment xml:lang="en">What are the most important costs inherent in our business model? 
 Which Key Resources are most expensive? 
@@ -594,9 +594,9 @@ Economies of scope</rdfs:comment>
     
 
 
-    <!-- http://purl.org/bmo#CustomerRelationship -->
+    <!-- http://purl.org/bmo/ns#CustomerRelationship -->
 
-    <owl:Class rdf:about="http://purl.org/bmo#CustomerRelationship">
+    <owl:Class rdf:about="http://purl.org/bmo/ns#CustomerRelationship">
         <rdfs:label xml:lang="en">Customer relationship</rdfs:label>
         <rdfs:comment xml:lang="en">What type of relationship does each of our  Customer Segments expect us to establish and maintain with them?
 Which ones have we established? 
@@ -615,9 +615,9 @@ Co-creation</rdfs:comment>
     
 
 
-    <!-- http://purl.org/bmo#CustomerSegment -->
+    <!-- http://purl.org/bmo/ns#CustomerSegment -->
 
-    <owl:Class rdf:about="http://purl.org/bmo#CustomerSegment">
+    <owl:Class rdf:about="http://purl.org/bmo/ns#CustomerSegment">
         <rdfs:label xml:lang="en">Customer segment</rdfs:label>
         <rdfs:comment xml:lang="en">For whom are we creating value?
 Who are our most important customers?
@@ -632,9 +632,9 @@ Multi-sided Platform</rdfs:comment>
     
 
 
-    <!-- http://purl.org/bmo#Feature -->
+    <!-- http://purl.org/bmo/ns#Feature -->
 
-    <owl:Class rdf:about="http://purl.org/bmo#Feature">
+    <owl:Class rdf:about="http://purl.org/bmo/ns#Feature">
         <rdfs:label xml:lang="en">Feature</rdfs:label>
         <rdfs:comment xml:lang="en">A feature is any combination of attributes or factors that is specific to an individual that can be used to categorise, classify, analise etc. that individual either using human resources or through machine learning.
 
@@ -646,9 +646,9 @@ Key can be stated explictely in a knowledge base e.g. Person001 hasSex Male, or 
     
 
 
-    <!-- http://purl.org/bmo#KeyActivity -->
+    <!-- http://purl.org/bmo/ns#KeyActivity -->
 
-    <owl:Class rdf:about="http://purl.org/bmo#KeyActivity">
+    <owl:Class rdf:about="http://purl.org/bmo/ns#KeyActivity">
         <rdfs:label xml:lang="en">Key activity</rdfs:label>
         <rdfs:comment xml:lang="en">What Key Activities do our Value Propositions require?
 Our Distribution Channels? 
@@ -664,9 +664,9 @@ Platform/Network</rdfs:comment>
     
 
 
-    <!-- http://purl.org/bmo#KeyPartner -->
+    <!-- http://purl.org/bmo/ns#KeyPartner -->
 
-    <owl:Class rdf:about="http://purl.org/bmo#KeyPartner">
+    <owl:Class rdf:about="http://purl.org/bmo/ns#KeyPartner">
         <rdfs:label xml:lang="en">Key partner</rdfs:label>
         <rdfs:comment xml:lang="en">Who are our Key Partners? 
 Who are our key suppliers?
@@ -682,9 +682,9 @@ Acquisition of particular resources and activities</rdfs:comment>
     
 
 
-    <!-- http://purl.org/bmo#KeyResource -->
+    <!-- http://purl.org/bmo/ns#KeyResource -->
 
-    <owl:Class rdf:about="http://purl.org/bmo#KeyResource">
+    <owl:Class rdf:about="http://purl.org/bmo/ns#KeyResource">
         <rdfs:label xml:lang="en">Key resource</rdfs:label>
         <rdfs:comment xml:lang="en">What Key Resources do our Value Propositions require?
 Our Distribution Channels? Customer Relationships?
@@ -700,9 +700,9 @@ Financial</rdfs:comment>
     
 
 
-    <!-- http://purl.org/bmo#MarketSpace -->
+    <!-- http://purl.org/bmo/ns#MarketSpace -->
 
-    <owl:Class rdf:about="http://purl.org/bmo#MarketSpace">
+    <owl:Class rdf:about="http://purl.org/bmo/ns#MarketSpace">
         <rdfs:label xml:lang="en">Market space</rdfs:label>
         <rdfs:comment xml:lang="en">An arena within which commercial dealing takes place; a market. Defined within context of Blue Ocean Strategy, see http://www.blueoceanstrategy.com/ for more information.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/bmo/1.0.0"/>
@@ -710,48 +710,48 @@ Financial</rdfs:comment>
     
 
 
-    <!-- http://purl.org/bmo#OfferingLevel -->
+    <!-- http://purl.org/bmo/ns#OfferingLevel -->
 
-    <owl:Class rdf:about="http://purl.org/bmo#OfferingLevel">
+    <owl:Class rdf:about="http://purl.org/bmo/ns#OfferingLevel">
         <rdfs:label xml:lang="en">Offering level</rdfs:label>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/bmo#hasOfferingLevelValue"/>
+                <owl:onProperty rdf:resource="http://purl.org/bmo/ns#isOfferingLevelOf"/>
+                <owl:onClass rdf:resource="&gr;BusinessEntity"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/bmo/ns#hasOfferingLevelValue"/>
                 <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onDataRange rdf:resource="&xsd;int"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/bmo#isOfferingLevelOf"/>
-                <owl:onClass rdf:resource="http://purl.org/bmo#CompetingFactor"/>
-                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/bmo#isOfferingLevelOf"/>
-                <owl:allValuesFrom>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.org/bmo#CompetingFactor"/>
-                            <rdf:Description rdf:about="&gr;BusinessEntity"/>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:allValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/bmo#hasOfferingLevelValue"/>
+                <owl:onProperty rdf:resource="http://purl.org/bmo/ns#hasOfferingLevelValue"/>
                 <owl:allValuesFrom rdf:resource="&xsd;int"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/bmo#isOfferingLevelOf"/>
-                <owl:onClass rdf:resource="&gr;BusinessEntity"/>
+                <owl:onProperty rdf:resource="http://purl.org/bmo/ns#isOfferingLevelOf"/>
+                <owl:onClass rdf:resource="http://purl.org/bmo/ns#CompetingFactor"/>
                 <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/bmo/ns#isOfferingLevelOf"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/bmo/ns#CompetingFactor"/>
+                            <rdf:Description rdf:about="&gr;BusinessEntity"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Offering level the buyers recieve for a competiting factor. Based on Blue Ocean Strategy&apos;s strategy canvas, see http://www.blueoceanstrategy.com/ for details.
@@ -766,18 +766,18 @@ The horizontal axis captures the range of factors the industry competes on and i
     
 
 
-    <!-- http://purl.org/bmo#Opportunity -->
+    <!-- http://purl.org/bmo/ns#Opportunity -->
 
-    <owl:Class rdf:about="http://purl.org/bmo#Opportunity">
+    <owl:Class rdf:about="http://purl.org/bmo/ns#Opportunity">
         <rdfs:label xml:lang="en">Opportunity</rdfs:label>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/bmo/1.0.0"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/bmo#RevenueStream -->
+    <!-- http://purl.org/bmo/ns#RevenueStream -->
 
-    <owl:Class rdf:about="http://purl.org/bmo#RevenueStream">
+    <owl:Class rdf:about="http://purl.org/bmo/ns#RevenueStream">
         <rdfs:label xml:lang="en">Revenue stream</rdfs:label>
         <rdfs:comment xml:lang="en">For what value are our customers really willing to pay?
 For what do they currently pay? 
@@ -810,18 +810,18 @@ Real-time-Market</rdfs:comment>
     
 
 
-    <!-- http://purl.org/bmo#Strength -->
+    <!-- http://purl.org/bmo/ns#Strength -->
 
-    <owl:Class rdf:about="http://purl.org/bmo#Strength">
+    <owl:Class rdf:about="http://purl.org/bmo/ns#Strength">
         <rdfs:label xml:lang="en">Strength</rdfs:label>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/bmo/1.0.0"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/bmo#SwotAnalysis -->
+    <!-- http://purl.org/bmo/ns#SwotAnalysis -->
 
-    <owl:Class rdf:about="http://purl.org/bmo#SwotAnalysis">
+    <owl:Class rdf:about="http://purl.org/bmo/ns#SwotAnalysis">
         <rdfs:label xml:lang="en">SWOTAnalysis</rdfs:label>
         <rdfs:comment xml:lang="en">A SWOT analysis (alternatively SWOT matrix) is a structured planning method used to evaluate the strengths, weaknesses, opportunities, and threats involved in a project or in a business venture. 
 
@@ -853,18 +853,18 @@ Furtermore, both weaknesses and threats are percieved to be harmfull to achievin
     
 
 
-    <!-- http://purl.org/bmo#Threat -->
+    <!-- http://purl.org/bmo/ns#Threat -->
 
-    <owl:Class rdf:about="http://purl.org/bmo#Threat">
+    <owl:Class rdf:about="http://purl.org/bmo/ns#Threat">
         <rdfs:label xml:lang="en">Threat</rdfs:label>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/bmo/1.0.0"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/bmo#ValueProposition -->
+    <!-- http://purl.org/bmo/ns#ValueProposition -->
 
-    <owl:Class rdf:about="http://purl.org/bmo#ValueProposition">
+    <owl:Class rdf:about="http://purl.org/bmo/ns#ValueProposition">
         <rdfs:label xml:lang="en">Value proposition</rdfs:label>
         <rdfs:comment xml:lang="en">What value do we deliver to the customer?
 Which one of our customer’s problems are we helping to solve? 
@@ -888,9 +888,9 @@ Convenience/Usability</rdfs:comment>
     
 
 
-    <!-- http://purl.org/bmo#Weakness -->
+    <!-- http://purl.org/bmo/ns#Weakness -->
 
-    <owl:Class rdf:about="http://purl.org/bmo#Weakness">
+    <owl:Class rdf:about="http://purl.org/bmo/ns#Weakness">
         <rdfs:label xml:lang="en">Weakness</rdfs:label>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/bmo/1.0.0"/>
     </owl:Class>
@@ -914,8 +914,8 @@ Convenience/Usability</rdfs:comment>
     <rdf:Description>
         <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.org/bmo#CompetingFactor"/>
-            <rdf:Description rdf:about="http://purl.org/bmo#OfferingLevel"/>
+            <rdf:Description rdf:about="http://purl.org/bmo/ns#CompetingFactor"/>
+            <rdf:Description rdf:about="http://purl.org/bmo/ns#OfferingLevel"/>
             <rdf:Description rdf:about="&gr;BusinessEntity"/>
         </owl:members>
     </rdf:Description>
