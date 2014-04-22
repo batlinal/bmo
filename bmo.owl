@@ -23,7 +23,7 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:gr="http://purl.org/goodrelations/v1#"
      xmlns:dcterms="http://purl.org/dc/terms/">
-    <owl:Ontology rdf:about="http://purl.org/bmo">
+    <owl:Ontology rdf:about="http://purl.org/bmo/ns">
         <rdfs:label xml:lang="en">Business Model Ontology</rdfs:label>
         <dc:creator xml:lang="en">Alex Batlin</dc:creator>
         <dc:title xml:lang="en">BMO: The Business Model Ontology</dc:title>
@@ -78,7 +78,7 @@ See http://www.w3.org/2004/02/skos/ for more information.</rdfs:comment>
         <dc:rights xml:lang="en">Business Model Ontology by Alex Batlin is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License; see http://creativecommons.org/licenses/by-sa/4.0/ and https://github.com/batlinal/bmo/.</dc:rights>
         <owl:versionInfo xml:lang="en">V 1.0.0, Release TBC</owl:versionInfo>
         <dcterms:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
-        <owl:versionIRI rdf:resource="http://purl.org/bmo/1.0.0"/>
+        <owl:versionIRI rdf:resource="http://purl.org/bmo/ns/1.0.0"/>
         <rdfs:seeAlso rdf:resource="http://purl.org/goodrelations/"/>
         <owl:imports rdf:resource="http://purl.org/goodrelations/v1"/>
         <rdfs:seeAlso rdf:resource="http://www.foaf-project.org/"/>
@@ -496,10 +496,10 @@ See http://www.w3.org/2004/02/skos/ for more information.</rdfs:comment>
                 <owl:onDatatype rdf:resource="&xsd;int"/>
                 <owl:withRestrictions rdf:parseType="Collection">
                     <rdf:Description>
-                        <xsd:minInclusive rdf:datatype="&xsd;integer">0</xsd:minInclusive>
+                        <xsd:maxInclusive rdf:datatype="&xsd;integer">5</xsd:maxInclusive>
                     </rdf:Description>
                     <rdf:Description>
-                        <xsd:maxInclusive rdf:datatype="&xsd;integer">5</xsd:maxInclusive>
+                        <xsd:minInclusive rdf:datatype="&xsd;integer">0</xsd:minInclusive>
                     </rdf:Description>
                 </owl:withRestrictions>
             </rdfs:Datatype>
@@ -724,7 +724,7 @@ Financial</rdfs:comment>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.org/bmo#isOfferingLevelOf"/>
-                <owl:onClass rdf:resource="&gr;BusinessEntity"/>
+                <owl:onClass rdf:resource="http://purl.org/bmo#CompetingFactor"/>
                 <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -743,15 +743,15 @@ Financial</rdfs:comment>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/bmo#isOfferingLevelOf"/>
-                <owl:onClass rdf:resource="http://purl.org/bmo#CompetingFactor"/>
-                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onProperty rdf:resource="http://purl.org/bmo#hasOfferingLevelValue"/>
+                <owl:allValuesFrom rdf:resource="&xsd;int"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/bmo#hasOfferingLevelValue"/>
-                <owl:allValuesFrom rdf:resource="&xsd;int"/>
+                <owl:onProperty rdf:resource="http://purl.org/bmo#isOfferingLevelOf"/>
+                <owl:onClass rdf:resource="&gr;BusinessEntity"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Offering level the buyers recieve for a competiting factor. Based on Blue Ocean Strategy&apos;s strategy canvas, see http://www.blueoceanstrategy.com/ for details.
