@@ -81,6 +81,7 @@ See http://www.w3.org/2004/02/skos/ for more information.</rdfs:comment>
         <rdfs:seeAlso rdf:resource="http://dublincore.org/"/>
         <rdfs:seeAlso rdf:resource="http://github.com/edumbill/doap/wiki/"/>
         <owl:versionIRI rdf:resource="http://purl.org/bmo/ns/1.0.0"/>
+        <owl:imports rdf:resource="http://purl.org/bmo/swot/"/>
         <rdfs:seeAlso rdf:resource="http://purl.org/goodrelations/"/>
         <owl:imports rdf:resource="http://purl.org/goodrelations/v1"/>
         <rdfs:seeAlso rdf:resource="http://schema.org/"/>
@@ -227,15 +228,6 @@ See http://www.w3.org/2004/02/skos/ for more information.</rdfs:comment>
     
 
 
-    <!-- http://purl.org/bmo/ns#hasOpportunity -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/bmo/ns#hasOpportunity">
-        <rdfs:label xml:lang="en">has opportunity (0..*)</rdfs:label>
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/bmo/1.0.0"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://purl.org/bmo/ns#hasRevenueStream -->
 
     <owl:ObjectProperty rdf:about="http://purl.org/bmo/ns#hasRevenueStream">
@@ -243,30 +235,6 @@ See http://www.w3.org/2004/02/skos/ for more information.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/bmo/1.0.0"/>
         <rdfs:domain rdf:resource="http://purl.org/bmo/ns#BusinessModel"/>
         <rdfs:range rdf:resource="http://purl.org/bmo/ns#RevenueStream"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.org/bmo/ns#hasStrength -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/bmo/ns#hasStrength">
-        <rdfs:label xml:lang="en">has stregth (0..*)</rdfs:label>
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/bmo/1.0.0"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.org/bmo/ns#hasSwotAnalysis -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/bmo/ns#hasSwotAnalysis"/>
-    
-
-
-    <!-- http://purl.org/bmo/ns#hasThreat -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/bmo/ns#hasThreat">
-        <rdfs:label xml:lang="en">has threat (0..*)</rdfs:label>
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/bmo/1.0.0"/>
     </owl:ObjectProperty>
     
 
@@ -279,15 +247,6 @@ See http://www.w3.org/2004/02/skos/ for more information.</rdfs:comment>
         <rdfs:domain rdf:resource="http://purl.org/bmo/ns#BusinessModel"/>
         <rdfs:range rdf:resource="http://purl.org/bmo/ns#ValueProposition"/>
         <owl:inverseOf rdf:resource="http://purl.org/bmo/ns#isValuePropositionOf"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.org/bmo/ns#hasWeakness -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/bmo/ns#hasWeakness">
-        <rdfs:label xml:lang="en">has weakness (0..*)</rdfs:label>
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/bmo/1.0.0"/>
     </owl:ObjectProperty>
     
 
@@ -416,15 +375,6 @@ See http://www.w3.org/2004/02/skos/ for more information.</rdfs:comment>
     
 
 
-    <!-- http://purl.org/bmo/ns#isOpportunityOf -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/bmo/ns#isOpportunityOf">
-        <rdfs:label xml:lang="en">is an opportunity of (0..*)</rdfs:label>
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/bmo/1.0.0"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://purl.org/bmo/ns#isRevenueStreamOf -->
 
     <owl:ObjectProperty rdf:about="http://purl.org/bmo/ns#isRevenueStreamOf">
@@ -437,30 +387,6 @@ See http://www.w3.org/2004/02/skos/ for more information.</rdfs:comment>
     
 
 
-    <!-- http://purl.org/bmo/ns#isStrengthOf -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/bmo/ns#isStrengthOf">
-        <rdfs:label xml:lang="en">is a strength of (0..*)</rdfs:label>
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/bmo/1.0.0"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.org/bmo/ns#isSwotAnalysisOf -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/bmo/ns#isSwotAnalysisOf"/>
-    
-
-
-    <!-- http://purl.org/bmo/ns#isThreatOf -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/bmo/ns#isThreatOf">
-        <rdfs:label xml:lang="en">is threat of (0..*)</rdfs:label>
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/bmo/1.0.0"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://purl.org/bmo/ns#isValuePropositionOf -->
 
     <owl:ObjectProperty rdf:about="http://purl.org/bmo/ns#isValuePropositionOf">
@@ -468,15 +394,6 @@ See http://www.w3.org/2004/02/skos/ for more information.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/bmo/1.0.0"/>
         <rdfs:range rdf:resource="http://purl.org/bmo/ns#BusinessModel"/>
         <rdfs:domain rdf:resource="http://purl.org/bmo/ns#ValueProposition"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.org/bmo/ns#isWeaknessOf -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/bmo/ns#isWeaknessOf">
-        <rdfs:label xml:lang="en">is a weakness of (0..*)</rdfs:label>
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/bmo/1.0.0"/>
     </owl:ObjectProperty>
     
 
@@ -773,15 +690,6 @@ The horizontal axis captures the range of factors the industry competes on and i
     
 
 
-    <!-- http://purl.org/bmo/ns#Opportunity -->
-
-    <owl:Class rdf:about="http://purl.org/bmo/ns#Opportunity">
-        <rdfs:label xml:lang="en">Opportunity</rdfs:label>
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/bmo/1.0.0"/>
-    </owl:Class>
-    
-
-
     <!-- http://purl.org/bmo/ns#RevenueStream -->
 
     <owl:Class rdf:about="http://purl.org/bmo/ns#RevenueStream">
@@ -817,58 +725,6 @@ Real-time-Market</rdfs:comment>
     
 
 
-    <!-- http://purl.org/bmo/ns#Strength -->
-
-    <owl:Class rdf:about="http://purl.org/bmo/ns#Strength">
-        <rdfs:label xml:lang="en">Strength</rdfs:label>
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/bmo/1.0.0"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/bmo/ns#SwotAnalysis -->
-
-    <owl:Class rdf:about="http://purl.org/bmo/ns#SwotAnalysis">
-        <rdfs:label xml:lang="en">SWOTAnalysis</rdfs:label>
-        <rdfs:comment xml:lang="en">A SWOT analysis (alternatively SWOT matrix) is a structured planning method used to evaluate the strengths, weaknesses, opportunities, and threats involved in a project or in a business venture. 
-
-A SWOT analysis can be carried out for a product, place, industry or person. It involves specifying the objective of the business venture or project and identifying the internal and external factors that are favorable and unfavorable to achieve that objective. The degree to which the internal environment of the firm matches with the external environment is expressed by the concept of strategic fit.
-
-Setting the objective should be done after the SWOT analysis has been performed. This would allow achievable goals or objectives to be set for the organization.
-
-- Strengths: characteristics of the business or project that give it an advantage over others.
-- Weaknesses: characteristics that place the business or project at a disadvantage relative to others
-- Opportunities: elements that the project could exploit to its advantage
-- Threats: elements in the environment that could cause trouble for the business or project
-
-Identification of SWOTs is important because they can inform later steps in planning to achieve the objective.
-
-First, the decision makers should consider whether the objective is attainable, given the SWOTs. If the objective is not attainable a different objective must be selected and the process repeated.
-
-Users of SWOT analysis need to ask and answer questions that generate meaningful information for each category (strengths, weaknesses, opportunities, and threats) to make the analysis useful and find their competitive advantage.
-
-SWOT analysis aims to identify the key internal and external factors seen as important to achieving an objective. SWOT analysis groups key pieces of information into two main categories:
-
-- Internal factors : the strengths and weaknesses internal to the organization
-- External factors : the opportunities and threats presented by the environment external to the organization
-
-Furtermore, both weaknesses and threats are percieved to be harmfull to achieving the goal, whilst strengths and opportunities are thought to be helpful.
-
-(Source: Wikipedia, the free encyclopedia, see http://en.wikipedia.org/wiki/SWOT_analysis)</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/bmo/1.0.0"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/bmo/ns#Threat -->
-
-    <owl:Class rdf:about="http://purl.org/bmo/ns#Threat">
-        <rdfs:label xml:lang="en">Threat</rdfs:label>
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/bmo/1.0.0"/>
-    </owl:Class>
-    
-
-
     <!-- http://purl.org/bmo/ns#ValueProposition -->
 
     <owl:Class rdf:about="http://purl.org/bmo/ns#ValueProposition">
@@ -890,15 +746,6 @@ Cost Reduction
 Risk Reduction
 Accessibility
 Convenience/Usability</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/bmo/1.0.0"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/bmo/ns#Weakness -->
-
-    <owl:Class rdf:about="http://purl.org/bmo/ns#Weakness">
-        <rdfs:label xml:lang="en">Weakness</rdfs:label>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/bmo/1.0.0"/>
     </owl:Class>
     
