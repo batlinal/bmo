@@ -1,0 +1,512 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY dcterms "http://purl.org/dc/terms/" >
+    <!ENTITY bmo "http://purl.org/bmo/ns/1.0.0#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY gr "http://purl.org/goodrelations/v1#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://purl.org/bmo/ns#"
+     xml:base="http://purl.org/bmo/ns"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:bmo="http://purl.org/bmo/ns/1.0.0#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:gr="http://purl.org/goodrelations/v1#"
+     xmlns:dcterms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="http://purl.org/bmo/swot/">
+        <rdfs:label xml:lang="en">SWOT Analysis Ontology</rdfs:label>
+        <rdfs:comment xml:lang="en">A Web vocabulary for describing a SWOT analysis. A SWOT analysis (alternatively SWOT matrix) is a structured planning method used to evaluate the strengths, weaknesses, opportunities, and threats involved in a project or in a business venture. 
+
+A SWOT analysis can be carried out for a product, place, industry or person. It involves specifying the objective of the business venture or project and identifying the internal and external factors that are favorable and unfavorable to achieve that objective. The degree to which the internal environment of the firm matches with the external environment is expressed by the concept of strategic fit.
+
+Setting the objective should be done after the SWOT analysis has been performed. This would allow achievable goals or objectives to be set for the organization.
+
+- Strengths: characteristics of the business or project that give it an advantage over others.
+- Weaknesses: characteristics that place the business or project at a disadvantage relative to others
+- Opportunities: elements that the project could exploit to its advantage
+- Threats: elements in the environment that could cause trouble for the business or project
+
+Identification of SWOTs is important because they can inform later steps in planning to achieve the objective.
+
+First, the decision makers should consider whether the objective is attainable, given the SWOTs. If the objective is not attainable a different objective must be selected and the process repeated.
+
+Users of SWOT analysis need to ask and answer questions that generate meaningful information for each category (strengths, weaknesses, opportunities, and threats) to make the analysis useful and find their competitive advantage.
+
+SWOT analysis aims to identify the key internal and external factors seen as important to achieving an objective. SWOT analysis groups key pieces of information into two main categories:
+
+- Internal factors : the strengths and weaknesses internal to the organization
+- External factors : the opportunities and threats presented by the environment external to the organization
+
+Analysis may view the internal factors as strengths or as weaknesses depending upon their effect on the organization&apos;s objectives. What may represent strengths with respect to one objective may be weaknesses (distractions, competition) for another objective. The factors may include all of the 4Ps; as well as personnel, finance, manufacturing capabilities, and so on.
+
+The external factors may include macroeconomic matters, technological change, legislation, and sociocultural changes, as well as changes in the marketplace or in competitive position. The results are often presented in the form of a matrix.
+
+Furtermore, both weaknesses and threats are percieved to be harmfull to achieving the goal, whilst strengths and opportunities are thought to be helpful.</rdfs:comment>
+        <dc:creator xml:lang="en">Alex Batlin</dc:creator>
+        <dc:subject xml:lang="en">SWOT Analysis</dc:subject>
+        <dc:title xml:lang="en">SWOT: The SWOT Analysis Ontology</dc:title>
+        <owl:versionInfo xml:lang="en">V 1.0.0, Release TBC</owl:versionInfo>
+        <dcterms:license rdf:resource="http://creativecommons.org/licenses/by-sa/4.0/"/>
+        <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/SWOT_analysis"/>
+        <owl:versionIRI rdf:resource="http://purl.org/bmo/swot/1.0.0"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/bmo/swot#hasOpportunity -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/bmo/swot#hasOpportunity">
+        <rdfs:label xml:lang="en">has opportunity (0..*)</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/bmo/swot#hasStrength -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/bmo/swot#hasStrength">
+        <rdfs:label xml:lang="en">has stregth (0..*)</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/bmo/swot#hasSwotAnalysis -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/bmo/swot#hasSwotAnalysis">
+        <rdfs:label xml:lang="en">has SWOT Analysis</rdfs:label>
+        <rdfs:range rdf:resource="http://purl.org/bmo/swot#SwotAnalysis"/>
+        <rdfs:domain rdf:resource="http://purl.org/bmo/swot/BusinessVentureOrProject"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/bmo/swot#hasThreat -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/bmo/swot#hasThreat">
+        <rdfs:label xml:lang="en">has threat (0..*)</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/bmo/swot#hasWeakness -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/bmo/swot#hasWeakness">
+        <rdfs:label xml:lang="en">has weakness (0..*)</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/bmo/swot#isSwotAnalysisOf -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/bmo/swot#isSwotAnalysisOf">
+        <rdfs:label xml:lang="en">is SWOT analysis of (0..*)</rdfs:label>
+        <rdfs:domain rdf:resource="http://purl.org/bmo/swot#SwotAnalysis"/>
+        <owl:inverseOf rdf:resource="http://purl.org/bmo/swot#hasSwotAnalysis"/>
+        <rdfs:range rdf:resource="http://purl.org/bmo/swot/BusinessVentureOrProject"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/bmo/swot#Opportunity -->
+
+    <owl:Class rdf:about="http://purl.org/bmo/swot#Opportunity">
+        <rdfs:label xml:lang="en">Opportunity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/bmo/swot/AdvatageElement"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/bmo/swot/ExternalFactor"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/bmo/swot/HelpfulFactor"/>
+        <rdfs:comment xml:lang="en">An opportunities si an element that the project could exploit to its advantage; it is an external factor that is percieved to be helpful to achieving a goal.
+</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/bmo/swot#Strength -->
+
+    <owl:Class rdf:about="http://purl.org/bmo/swot#Strength">
+        <rdfs:label xml:lang="en">Strength</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/bmo/swot/AdvanatgeCharacteristic"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/bmo/swot/HelpfulFactor"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/bmo/swot/InternalFactor"/>
+        <rdfs:comment xml:lang="en">Strengths is a characteristic of the business or project that gives it an advantage over others; it is an internal factor that is percieved to be helpful to achieving a goal.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/bmo/swot#SwotAnalysis -->
+
+    <owl:Class rdf:about="http://purl.org/bmo/swot#SwotAnalysis">
+        <rdfs:label xml:lang="en">SWOT analysis</rdfs:label>
+        <rdfs:comment xml:lang="en">A SWOT analysis (alternatively SWOT matrix) is a structured planning method used to evaluate the strengths, weaknesses, opportunities, and threats involved in a project or in a business venture.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/bmo/swot#Threat -->
+
+    <owl:Class rdf:about="http://purl.org/bmo/swot#Threat">
+        <rdfs:label xml:lang="en">Threat</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/bmo/swot/DisadvatageElement"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/bmo/swot/ExternalFactor"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/bmo/swot/HarmfulFactor"/>
+        <rdfs:comment xml:lang="en">Threat is an element in the environment that could cause trouble for the business or project; it is an external factor that is percieved to be harmful to achieving a goal.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/bmo/swot#Weakness -->
+
+    <owl:Class rdf:about="http://purl.org/bmo/swot#Weakness">
+        <rdfs:label xml:lang="en">Weakness</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/bmo/swot/DiadvantageCharacteristic"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/bmo/swot/HarmfulFactor"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/bmo/swot/InternalFactor"/>
+        <rdfs:comment xml:lang="en">Weakness is a characteristic that places the business or project at a disadvantage relative to others; it is an internal factor that is percieved to be harmful to achieving a goal.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/bmo/swot/Action -->
+
+    <owl:Class rdf:about="http://purl.org/bmo/swot/Action">
+        <rdfs:label xml:lang="en">Action</rdfs:label>
+        <rdfs:comment xml:lang="en">Action or a step that is planned in order to achieve the objective set in the SWOT analysis.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/bmo/swot/AdvanatgeCharacteristic -->
+
+    <owl:Class rdf:about="http://purl.org/bmo/swot/AdvanatgeCharacteristic">
+        <rdfs:label xml:lang="en">Advantage characteristic</rdfs:label>
+        <rdfs:label xml:lang="en">Characteristic of the business or project that give it an advantage over others.</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/bmo/swot/Characteristic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/bmo/swot/AdvatageElement -->
+
+    <owl:Class rdf:about="http://purl.org/bmo/swot/AdvatageElement">
+        <rdfs:label xml:lang="en">Advantage element</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/bmo/swot/Element"/>
+        <rdfs:comment xml:lang="en">Element in the environment that could be expoited to the advantage of the business or project.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/bmo/swot/AnalysisSubject -->
+
+    <owl:Class rdf:about="http://purl.org/bmo/swot/AnalysisSubject">
+        <rdfs:label xml:lang="en">Analysis subject</rdfs:label>
+        <rdfs:comment xml:lang="en">Subject of the SWOT analysis.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/bmo/swot/AttainableObjectiveOrGoal -->
+
+    <owl:Class rdf:about="http://purl.org/bmo/swot/AttainableObjectiveOrGoal">
+        <rdfs:label xml:lang="en">Attainable objective or goal</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/bmo/swot/ObjectiveOrGoal"/>
+        <rdfs:comment xml:lang="en">An objective or goal that can be attained based on SWOT analysis.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/bmo/swot/BusinessVentureOrProject -->
+
+    <owl:Class rdf:about="http://purl.org/bmo/swot/BusinessVentureOrProject">
+        <rdfs:label xml:lang="en">Business venture or project</rdfs:label>
+        <rdfs:comment xml:lang="en">A business venture or project that is the subject of a SWOT analysis.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/bmo/swot/Characteristic -->
+
+    <owl:Class rdf:about="http://purl.org/bmo/swot/Characteristic">
+        <rdfs:label xml:lang="en">Characteristic</rdfs:label>
+        <rdfs:comment xml:lang="en">Chharacteristic of the business or project.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/bmo/swot/ConvertAction -->
+
+    <owl:Class rdf:about="http://purl.org/bmo/swot/ConvertAction">
+        <rdfs:label xml:lang="en">Convert action</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/bmo/swot/Action"/>
+        <rdfs:comment xml:lang="en">Converting is to apply conversion strategies to convert weaknesses or threats into strengths or opportunities. An example of conversion strategy is to find new markets. If the threats or weaknesses cannot be converted, a company should try to minimize or avoid them.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/bmo/swot/DiadvantageCharacteristic -->
+
+    <owl:Class rdf:about="http://purl.org/bmo/swot/DiadvantageCharacteristic">
+        <rdfs:label xml:lang="en">Disadvantage characteristic</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/bmo/swot/Characteristic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/bmo/swot/DisadvatageElement -->
+
+    <owl:Class rdf:about="http://purl.org/bmo/swot/DisadvatageElement">
+        <rdfs:label xml:lang="en">Disadvatage element</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/bmo/swot/Element"/>
+        <rdfs:comment xml:lang="en">Element in the environment that could cause trouble for the business or project.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/bmo/swot/Element -->
+
+    <owl:Class rdf:about="http://purl.org/bmo/swot/Element">
+        <rdfs:label xml:lang="en">Element</rdfs:label>
+        <rdfs:comment xml:lang="en">Element in the environment.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/bmo/swot/ExternalFactor -->
+
+    <owl:Class rdf:about="http://purl.org/bmo/swot/ExternalFactor">
+        <rdfs:label xml:lang="en">External factor</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/bmo/swot/Factor"/>
+        <rdfs:comment xml:lang="en">External to the organization factor.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/bmo/swot/Factor -->
+
+    <owl:Class rdf:about="http://purl.org/bmo/swot/Factor">
+        <rdfs:label xml:lang="en">Factor</rdfs:label>
+        <rdfs:comment xml:lang="en">Something seen as important to achieving an objective.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/bmo/swot/FullStrategicFit -->
+
+    <owl:Class rdf:about="http://purl.org/bmo/swot/FullStrategicFit">
+        <rdfs:label xml:lang="en">Full strategic fit</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/bmo/swot/StrategicFit"/>
+        <rdfs:comment xml:lang="en">Internal environment of the firm fully matches with the external environment.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/bmo/swot/HarmfulFactor -->
+
+    <owl:Class rdf:about="http://purl.org/bmo/swot/HarmfulFactor">
+        <rdfs:label xml:lang="en">Harmful factor</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/bmo/swot/Factor"/>
+        <rdfs:comment xml:lang="en">Factor percieved to be harmful to achieving the goal.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/bmo/swot/HelpfulFactor -->
+
+    <owl:Class rdf:about="http://purl.org/bmo/swot/HelpfulFactor">
+        <rdfs:label xml:lang="en">Helpful factor</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/bmo/swot/Factor"/>
+        <rdfs:comment xml:lang="en">Factor percieved to be helpful to achieving the goal.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/bmo/swot/HighStrategicFit -->
+
+    <owl:Class rdf:about="http://purl.org/bmo/swot/HighStrategicFit">
+        <rdfs:label xml:lang="en">High strategic fit</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/bmo/swot/StrategicFit"/>
+        <rdfs:comment xml:lang="en">Internal environment of the firm has approx 75% match with the external environment.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/bmo/swot/Industry -->
+
+    <owl:Class rdf:about="http://purl.org/bmo/swot/Industry">
+        <rdfs:label xml:lang="en">Industry</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/bmo/swot/AnalysisSubject"/>
+        <rdfs:comment xml:lang="en">Industry that is the subject of the SWOT analysis.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/bmo/swot/InternalFactor -->
+
+    <owl:Class rdf:about="http://purl.org/bmo/swot/InternalFactor">
+        <rdfs:label xml:lang="en">Internal factor</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/bmo/swot/Factor"/>
+        <rdfs:comment xml:lang="en">iInternal to the organization factor.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/bmo/swot/LowStrategicFit -->
+
+    <owl:Class rdf:about="http://purl.org/bmo/swot/LowStrategicFit">
+        <rdfs:label xml:lang="en">Low strategic fit</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/bmo/swot/StrategicFit"/>
+        <rdfs:comment xml:lang="en">Internal environment of the firm has approx 25% match with the external environment.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/bmo/swot/MatchAction -->
+
+    <owl:Class rdf:about="http://purl.org/bmo/swot/MatchAction">
+        <rdfs:label xml:lang="en">Match action</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/bmo/swot/Action"/>
+        <rdfs:comment xml:lang="en">Matching is used to find competitive advantage by matching the strengths to opportunities. </rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/bmo/swot/MediumStrategicFit -->
+
+    <owl:Class rdf:about="http://purl.org/bmo/swot/MediumStrategicFit">
+        <rdfs:label xml:lang="en">Medium strategic fit</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/bmo/swot/StrategicFit"/>
+        <rdfs:comment xml:lang="en">Internal environment of the firm has approx 50% match with the external environment.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/bmo/swot/NoStrategicFit -->
+
+    <owl:Class rdf:about="http://purl.org/bmo/swot/NoStrategicFit">
+        <rdfs:label xml:lang="en">No strategic fit</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/bmo/swot/StrategicFit"/>
+        <rdfs:comment xml:lang="en">Internal environment of the firm has no matches with the external environment.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/bmo/swot/ObjectiveOrGoal -->
+
+    <owl:Class rdf:about="http://purl.org/bmo/swot/ObjectiveOrGoal">
+        <rdfs:label xml:lang="en">Objective or goal</rdfs:label>
+        <rdfs:comment xml:lang="en">Objective or goal of the business venture or project.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/bmo/swot/Person -->
+
+    <owl:Class rdf:about="http://purl.org/bmo/swot/Person">
+        <rdfs:label xml:lang="en">Person</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/bmo/swot/AnalysisSubject"/>
+        <rdfs:comment xml:lang="en">Person that is the subject of the SWOT analysis.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/bmo/swot/Place -->
+
+    <owl:Class rdf:about="http://purl.org/bmo/swot/Place">
+        <rdfs:label xml:lang="en">Place</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/bmo/swot/AnalysisSubject"/>
+        <rdfs:comment xml:lang="en">Place that is the subject of the SWOT analysis.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/bmo/swot/Product -->
+
+    <owl:Class rdf:about="http://purl.org/bmo/swot/Product">
+        <rdfs:label xml:lang="en">Product</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/bmo/swot/AnalysisSubject"/>
+        <rdfs:comment xml:lang="en">Product that is the subject of the SWOT analysis.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/bmo/swot/StrategicFit -->
+
+    <owl:Class rdf:about="http://purl.org/bmo/swot/StrategicFit">
+        <rdfs:label xml:lang="en">Strategic fit</rdfs:label>
+        <rdfs:comment xml:lang="en">The degree to which the internal environment of the firm matches with the external environment is expressed by the concept of strategic fit.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/bmo/swot/UnattainableObjectiveOrGoal -->
+
+    <owl:Class rdf:about="http://purl.org/bmo/swot/UnattainableObjectiveOrGoal">
+        <rdfs:label xml:lang="en">Unattainable objective or goal</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/bmo/swot/ObjectiveOrGoal"/>
+        <rdfs:comment xml:lang="en">An objective or goal that cannot be attained based on SWOT analysis.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.org/bmo/swot/Industry"/>
+            <rdf:Description rdf:about="http://purl.org/bmo/swot/Person"/>
+            <rdf:Description rdf:about="http://purl.org/bmo/swot/Place"/>
+            <rdf:Description rdf:about="http://purl.org/bmo/swot/Product"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.org/bmo/swot/FullStrategicFit"/>
+            <rdf:Description rdf:about="http://purl.org/bmo/swot/HighStrategicFit"/>
+            <rdf:Description rdf:about="http://purl.org/bmo/swot/LowStrategicFit"/>
+            <rdf:Description rdf:about="http://purl.org/bmo/swot/MediumStrategicFit"/>
+            <rdf:Description rdf:about="http://purl.org/bmo/swot/NoStrategicFit"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
